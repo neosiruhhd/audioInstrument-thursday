@@ -27,8 +27,8 @@ popup.addEventListener("close", toneInit);
 popup.showModal();
 
 //// CLOSE POPUP
-function closePopup(){popup.close();}
-popupCloseButton.addEventListener("click", closePopup);
+function closePopupAction(){popup.close();}
+popupCloseButton.addEventListener("click", closePopupAction);
 
 //// PLAY TEST NOTE
 testButton.addEventListener("click", playTestNote);
