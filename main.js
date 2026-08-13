@@ -20,7 +20,7 @@ const synth = new Tone.Synth();
 function toneInit(){
     synth.connect(Tone.Destination);
 }
-
+// enables the audio after the popup gets closed
 popup.addEventListener("close", toneInit);
 
 //// SHOW POPUP

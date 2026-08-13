@@ -1,0 +1,12 @@
+:root {
+    --colour-01: black;
+    --colour-02: white;
+    --colour-03: darkgray;
+    --colour-04: lightgray;
+}
+
+body {
+    font-family: "Funnel Display", sans-serif;
+    background-color: var(--colour-01);
+    color: var(--colour-02)
+}
