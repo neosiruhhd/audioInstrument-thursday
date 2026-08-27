@@ -36,3 +36,16 @@ testButton.addEventListener("click", playTestNote);
 function playTestNote(){
     synth.triggerAttackRelease("C4", "8n");
 }
+
+// AUDIO FILE PLAYBACK
+const playbackButton = document.getElementById("playbackButton");
+const audioTrack = document.getElementById("audioTrack")
+function playPauseAudio(){
+    if(audioTrack.paused === true){
+    audioTrack.play();
+    } else {
+        audioTrack.paused();
+    }
+}
+
+playbackButton.addEventListener("click", playPauseAudio)
