@@ -44,8 +44,17 @@ function playPauseAudio(){
     if(audioTrack.paused === true){
     audioTrack.play();
     } else {
-        audioTrack.paused();
+        audioTrack.pause();
     }
 }
 
-playbackButton.addEventListener("click", playPauseAudio)
+playbackButton.addEventListener("click", playPauseAudio);
+
+// randomly scrub to location
+const randomButton = document.getElementById("randomLocation");
+
+function randomLocation(){
+    let trackLength = audioTrack.duration;
+    audioTrack.currentTime = trackLength * Math.random();
+}
+randomButton.addEventListener("click", randomLocation);
